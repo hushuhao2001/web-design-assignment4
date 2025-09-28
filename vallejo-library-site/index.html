@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Vallejo Public Library — Home</title>
+  <!-- Google Fonts: Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== Header (logo | nav | search) ===== -->
+  <header>
+    <div class="site-title">The Vallejo Public Library</div>
+    <nav aria-label="Primary">
+      <a href="./index.html" aria-current="page">Home</a>
+      <a href="./catalog.html">Catalog</a>
+      <!-- 为避免断链，“Get a Card / News” 先都指向 catalog.html（或你之后想放的页面） -->
+      <a href="./catalog.html">Get a Card</a>
+      <a href="./catalog.html">News</a>
+    </nav>
+    <form class="site-search" role="search" aria-label="Search the catalog">
+      <input type="search" placeholder="Search the catalog…" />
+      <button type="submit">Search</button>
+    </form>
+  </header>
+
+  <!-- ===== Hero：大图占位 + 居中标题（严格按 mockup） ===== -->
+  <section class="hero">
+    <div class="hero-img" aria-hidden="true"></div>
+    <h1 class="hero-title">Welcome to The Vallejo Public Library</h1>
+    <p class="hero-caption muted">Hero / Feature (image placeholder)</p>
+  </section>
+
+  <!-- ===== Main：两列布局 ===== -->
+  <main id="main" class="home-grid" aria-label="Homepage content">
+    <!-- 左列：Address / Opening Hours / Email —— 三个独立块，每块右侧有小占位图 -->
+    <section class="block card" aria-labelledby="addr">
+      <h2 id="addr">Address</h2>
+      <div class="block-row">
+        <div class="block-text">
+          505 Santa Clara St, Vallejo, CA 94590<br />
+          United States
+        </div>
+        <div class="mini-thumb" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="block card" aria-labelledby="hours">
+      <h2 id="hours">Opening Hours</h2>
+      <div class="block-row">
+        <div class="block-text">
+          Mon–Thu 10:00–18:00<br />
+          Fri 10:00–17:00 · Sat 10:00–16:00 · Sun Closed
+        </div>
+        <div class="mini-thumb" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="block card" aria-labelledby="email">
+      <h2 id="email">Email</h2>
+      <div class="block-row">
+        <div class="block-text">info@vallejolibrary.org</div>
+        <div class="mini-thumb" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- 右列：Latest News + 两个横向链接卡（带长条占位） -->
+    <aside class="news card" aria-labelledby="news">
+      <h2 id="news">Latest News</h2>
+
+      <div class="news-item">
+        <div class="news-thumb" aria-hidden="true"></div>
+        <div class="news-body">
+          <div class="news-title">News item (placeholder) <span class="muted">(date)</span></div>
+        </div>
+      </div>
+
+      <div class="link-panel">
+        <div class="link-thumb" aria-hidden="true"></div>
+        <p class="link-text">→ <a href="./catalog.html">Book Catalog (link)</a></p>
+      </div>
+
+      <div class="link-panel">
+        <div class="link-thumb" aria-hidden="true"></div>
+        <p class="link-text">→ <a href="./catalog.html">Get a Library Card (link)</a></p>
+      </div>
+    </aside>
+  </main>
+
+  <!-- ===== Footer（与 mockup 一致：馆名 | 地址 | 邮箱 | 版权） ===== -->
+  <footer class="site-footer">
+    <div><strong>The Vallejo Public Library</strong></div>
+    <div>505 Santa Clara St, Vallejo, CA 94590</div>
+    <div>info@vallejolibrary.org</div>
+    <div>© 2025</div>
+  </footer>
+</body>
+</html>
+
+
