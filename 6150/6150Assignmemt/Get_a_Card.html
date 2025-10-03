@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Vallejo Public Library — Get a Library Card</title>
+  <meta name="description" content="Apply for a library card at The Vallejo Public Library." />
+  <style>
+    :root { --max: 860px; --blue: #2c6edb; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; line-height: 1.6; color: #1a1a1a; background: #f8fafc; }
+    header, footer { background: #f1f5fd; }
+    header { border-bottom: 1px solid #e3e8f0; }
+    .container { max-width: var(--max); margin: 0 auto; padding: 1rem 1.25rem; }
+    nav a { margin-right: 1rem; text-decoration: none; color: var(--blue); font-weight: 600; }
+    nav a:hover, nav a:focus { text-decoration: underline; }
+    main { padding: 1.25rem 0 2rem; }
+    .hero { text-align: center; }
+    .hero .bar { background: var(--blue); color:#fff; padding: .9rem 1rem; border-radius: .4rem; display: inline-block; font-weight: 700; min-width: 420px; }
+    form { margin-top: 1.25rem; }
+    fieldset { border: 0; padding: 0; margin: 0; }
+    .group { background: var(--blue); color:#fff; padding: .9rem 1rem; border-radius: .35rem; margin: 1rem 0; }
+    .group label { display:block; font-weight:700; margin-bottom:.35rem; }
+    .input-wrap { background:#fff; border-radius:.3rem; padding:.5rem; }
+    input, select { width: 100%; border: 0; font-size: 1rem; outline: none; padding: .5rem; box-sizing: border-box; }
+    .actions { text-align:center; margin-top: 1.25rem; }
+    .button { display:inline-block; background: var(--blue); color:#fff; border: none; padding: .7rem 1.1rem; border-radius:.45rem; font-weight:700; cursor:pointer; }
+    .button:hover, .button:focus { filter: brightness(.95); }
+    .note { color:#444; text-align:center; margin-top:.75rem; }
+    footer { border-top: 1px solid #e3e8f0; }
+    small { color:#555; }
+  </style>
+</head>
+<body>
+  <header role="banner">
+    <div class="container">
+      <p style="margin:0;color:#555;">The Vallejo Public Library</p>
+      <h1 style="margin:.25rem 0 0 0;">Get your Library Card</h1>
+      <nav aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="Book_Catalog.html">Book Catalog</a>
+        <a href="Get_a_Card.html" aria-current="page">Get a Library Card</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="hero" aria-labelledby="apply-heading">
+      <div class="bar" id="apply-heading">Get your Library Card</div>
+      <p class="note">Fill out the form below. A confirmation will be sent to your email after staff review.</p>
+    </section>
+
+    <section aria-labelledby="form-heading">
+      <h2 id="form-heading" class="visually-hidden" style="position:absolute;left:-9999px;">Application Form</h2>
+
+      <form action="#" method="post">
+        <fieldset>
+          <!-- Name -->
+          <div class="group">
+            <label for="name">Name</label>
+            <div class="input-wrap">
+              <input type="text" id="name" name="name" placeholder="First and Last Name" required />
+            </div>
+          </div>
+
+          <!-- ID -->
+          <div class="group">
+            <label for="idNumber">ID</label>
+            <div class="input-wrap">
+              <input type="text" id="idNumber" name="idNumber" placeholder="Government-issued ID number" required />
+            </div>
+          </div>
+
+          <!-- ID Type -->
+          <div class="group">
+            <label for="idType">ID Type</label>
+            <div class="input-wrap">
+              <select id="idType" name="idType" required>
+                <option value="" selected disabled>Select ID type</option>
+                <option value="Driver License">Driver License</option>
+                <option value="State ID">State ID</option>
+                <option value="Passport">Passport</option>
+                <option value="Student ID">Student ID</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Birthday -->
+          <div class="group">
+            <label for="birthday">Birthday</label>
+            <div class="input-wrap">
+              <input type="date" id="birthday" name="birthday" required />
+            </div>
+          </div>
+
+          <div class="actions">
+            <button type="submit" class="button">Submit Application</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p><strong>The Vallejo Public Library</strong></p>
+      <p><small>Email: <a href="mailto:info@vallejolibrary.org">info@vallejolibrary.org</a> · Address: 505 Santa Clara St, Vallejo, CA 94590</small></p>
+      <p><small>&copy; 2025 The Vallejo Public Library</small></p>
+    </div>
+  </footer>
+</body>
+</html>
